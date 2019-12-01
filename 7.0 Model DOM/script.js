@@ -15,9 +15,13 @@ window.onload = function () {
       //  element.style.border = '5px solid green'
    // }
     /* wyszukiwanie po tagach */
-    let array = document.getElementsByTagName('div');
-    for (element of array) {
-        element.style.border = '5px solid green'
-    }
-
+    //let array = document.getElementsByTagName('div');
+    //for (element of array) {
+    //    element.style.border = '5px solid green'
+    //}
+    //document.getElementById('special').parentNode.style.border
+   // document.getElementById('special').previousElementSibling.style.border = '5px solid red';
+   // document.getElementById('special').nextElementSibling.style.border = '5px solid red';
+    //document.getElementById('special').previousElementSibling.style.border = '5px solid red';
+    document.getElementById('special').lastElementChild.style.border = '5px solid red';
 };
