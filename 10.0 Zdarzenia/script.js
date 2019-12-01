@@ -29,9 +29,11 @@ boxContainer.appendChild(nowyElement);
 });
 //usuwanie boxów po kliknięciu na nim
 boxContainer.addEventListener('click', function (e) {
+
     if (e.target.className.includes('box')) {
         this.removeChild(e.target);
     }
+    console.log(e);
 });
 
 };
