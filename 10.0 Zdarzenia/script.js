@@ -27,4 +27,11 @@ boxContainer.appendChild(nowyElement);
 //wyskakujące okno
 //alert('Dodano!!!!!');
 });
+//usuwanie boxów po kliknięciu na nim
+boxContainer.addEventListener('click', function (e) {
+    if (e.target.className.includes('box')) {
+        this.removeChild(e.target);
+    }
+});
+
 };
