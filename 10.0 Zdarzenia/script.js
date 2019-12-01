@@ -16,4 +16,15 @@ window.onload = function () {
         document.getElementById('key-down-counter').textContent = ++keyDownCounter;
 
     });
+
+
+let button = document.getElementById('add-element');
+let boxContainer = document.getElementById('box-container');
+button.addEventListener('click', function () {
+let nowyElement = document.createElement('div');
+nowyElement.classList.add('box');
+boxContainer.appendChild(nowyElement);
+//wyskakujące okno
+//alert('Dodano!!!!!');
+});
 };
